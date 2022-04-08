@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+
+<!-- ************Servlet Declaration************ -->
+
+<servlet>
+
+<!-- Servlet name tag -->
+<servlet-name>first</servlet-name>
+<!-- Servlet Tag Name of = Package.Name Of java file  -->
+<servlet-class>com.servlets.FirstServlet</servlet-class>
+
+</servlet>
+
+<servlet>
+
+<!-- Servlet name tag -->
+<servlet-name>secondisGeneric</servlet-name>
+<!-- Servlet Tag Name of Package.Name Of java file  -->
+<servlet-class>com.servlets.SecondServlet</servlet-class>
+
+</servlet>
+
+<servlet>
+
+<!-- Servlet name tag -->
+<servlet-name>httpServlet</servlet-name>
+<!-- Servlet Tag Name of Package.Name Of java file  -->
+<servlet-class>com.servlets.httpservlet</servlet-class>
+
+</servlet>
+
+
+<!-- ************Mapping************ -->
+
+<servlet-mapping>
+<!-- For Mapping Servlet Name class -->
+<servlet-name>first</servlet-name>
+<!-- /web url linked to first servlet name, & that is linked to com.servlets.FirstServlet -->
+<url-pattern>/first</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+<!-- For Mapping Servlet Name class -->
+<servlet-name>secondisGeneric</servlet-name>
+<!-- /web url linked to first servlet name, & that is linked to com.servlets.FirstServlet -->
+<url-pattern>/secondisGeneric</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+<!-- For Mapping Servlet Name class -->
+<servlet-name>httpServlet</servlet-name>
+<!-- /web url linked to first servlet name, & that is linked to com.servlets.FirstServlet -->
+<url-pattern>/http</url-pattern>
+</servlet-mapping>
+
+
+  <display-name>Ztest</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
